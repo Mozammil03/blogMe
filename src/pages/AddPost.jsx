@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from "../components/container/Container"
+import Container from "../components/cont/Container"
 import PostForm from '../components/post-form/PostForm'
 
 
