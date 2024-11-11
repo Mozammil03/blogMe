@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import appwriteService from "../appwrite/config";
 import Container from "../components/cont/Container";
 import PostCard from "../components/PostCard";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import { PenLine, BookOpen, Users, ThumbsUp } from "lucide-react";
 
 function Home() {
   const [posts, setPosts] = useState([]);
-
+  const navigate = useNavigate();
   useEffect(() => {
     appwriteService.getPosts().then((posts) => {
       if (posts) {
@@ -26,6 +26,9 @@ function Home() {
     },
     
   ];
+  const handleStart = () => {
+    navigate('/login');
+  }
 
   if (posts.length === 0) {
     return (
@@ -59,7 +62,7 @@ function Home() {
               ))}
             </div>
 
-            <div className="text-center">
+            <div className="text-center" onClick={handleStart}>
               <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-xl text-lg font-medium transition-colors duration-300 shadow-xl">
                 Start Writing
               </Button>
