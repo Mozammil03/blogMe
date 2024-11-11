@@ -24,23 +24,18 @@ function Home() {
       description: "Share your thoughts and ideas with the world",
       link: "/add-post",
     },
-    {
-      icon: <BookOpen className="w-6 h-6 text-orange-600" />,
-      title: "Discover Stories",
-      description: "Explore diverse perspectives and unique insights",
-      link: "/all-posts",
-    }
+    
   ];
 
   if (posts.length === 0) {
     return (
-      <div className="w-full">
+      <div className="w-full ">
         <Container>
-          <div className="w-full min-h-[80vh] shadow-2xl bg-gradient-to-b from-orange-200 to-orange-200 flex flex-col text-orange-950 items-center py-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-orange-600 text-center mb-4 ">
+          <div className="w-full rounded-xl border-2 border-orange-100 min-h-[80vh] shadow-2xl bg-gradient-to-b from-orange-200 to-orange-200 flex flex-col text-orange-950 items-center justify-start py-12">
+            <h1 className="text-5xl p-4 pt-0 md:text-5xl font-bold text-orange-600 text-center mb-4 ">
               Welcome to <span className="text-orange-950">Blog</span>Me
             </h1>
-            <p className="text-xl text-orange-400 text-center max-w-2xl mb-12">
+            <p className="text-xl text-orange-400 text-center max-w-xl mb-8">
               Your space to create, share, and discover amazing stories
             </p>
 
@@ -51,7 +46,7 @@ function Home() {
                   key={index}
                   className="group p-6 bg-white rounded-lg shadow-md hover:shadow-lg text-orange-950 transition-all duration-300 border "
                 >
-                  <div className="flex flex-col items-center text-center shadow-xl">
+                  <div className="flex flex-col items-center text-center">
                     <div className="mb-4 p-3 bg-orange-50 rounded-full group-hover:bg-orange-100 transition-colors duration-300">
                       {feature.icon}
                     </div>
