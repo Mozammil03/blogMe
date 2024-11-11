@@ -1,21 +1,21 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom';
-import BSTvisual from './ExperimentComponents/BSTvisual';
-import BinarySearch from './ExperimentComponents/binarySearch';
+// import React from 'react'
+// import { Outlet } from 'react-router-dom';
+// import BSTvisual from './ExperimentComponents/BSTvisual';
+// import BinarySearch from './ExperimentComponents/binarySearch';
 
 
-const Experiment = () => {
-  return (
-    <div>
-      <div className="w-[100%] h-[100%] ">
+// const Experiment = () => {
+//   return (
+//     <div>
+//       <div className="w-[100%] h-[100%] ">
     
-                  {/* <Outlet /> */}
-                  {/* <BSTvisual /> */}
-                  <BinarySearch/>
+//                   {/* <Outlet /> */}
+//                   {/* <BSTvisual /> */}
+//                   <BinarySearch/>
         
-      </div>
-    </div>
-  );
-}
+//       </div>
+//     </div>
+//   );
+// }
 
-export default Experiment
+// export default Experiment

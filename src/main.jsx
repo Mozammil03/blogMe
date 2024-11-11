@@ -15,7 +15,7 @@ import AddPost from './pages/AddPost.jsx'
 import EditPost from './pages/EditPost.jsx'
 import Post from './pages/Post.jsx'
 import StepForm from './components/StepForm.jsx'
-import Experiment from './Experiment.jsx'
+// import Experiment from './Experiment.jsx'
 
 
 
