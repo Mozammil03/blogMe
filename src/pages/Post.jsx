@@ -66,7 +66,7 @@ function Post() {
             <Link to={`/edit-post/${post.$id}`}>
               <Button
                 bgColor="bg-orange-300 "
-                className="mr-3 rounded-xl font-semibold hover:bg-orange-400 "
+                className="mr-3 rounded-xl hidden font-semibold hover:bg-orange-400 "//edit hidden ??
               >
                 Edit
               </Button>
