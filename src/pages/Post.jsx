@@ -14,6 +14,7 @@ function Post() {
   const userData = useSelector((state) => state.auth.userData)
   const isAuthor = post && userData ? post.userId === userData.$id : false
   
+  
   // console.log("Navigated to post with slug:", slug);
 
   useEffect(() => {
@@ -47,12 +48,12 @@ function Post() {
           <img
             src={appwriteService.getFilePreview(post.featuredImg)}
             alt={post.title}
-            className="rounded-xl h-full w-full object-cover brightness-[0.3]"
+            className="rounded-xl h-full w-full object-cover brightness-[0.4]"
           />
         </div>
         <div className="w-full mb-6 shadow-xl">
-          <h1 className="text-7xl font-bold absolute top-[26%] text-center left-[33%] h-40 ">
-            <div className=" h-[100%] w-[550px] flex flex-col justify-center  text-orange-400 items-center place-content-center">
+          <h1 className="text-4xl md:sm:text-7xl md:sm:w-[80%] absolute w-[350px] translate-y-[-220px] p-2  font-bold text-center ">
+            <div className="flex flex-col justify-center  text-orange-400 items-center place-content-center">
               {post.title}
             </div>
           </h1>
