@@ -52,7 +52,7 @@ function Post() {
           />
         </div>
         <div className="w-full mb-6 shadow-xl">
-          <h1 className="text-4xl md:sm:text-7xl md:sm:w-[80%] absolute w-[350px] translate-y-[-220px] p-2  font-bold text-center ">
+          <h1 className="text-3xl md:sm:text-7xl md:sm:w-[80%] absolute w-[350px] translate-y-[-220px] p-2  font-bold text-center ">
             <div className="flex flex-col justify-center  text-orange-400 items-center place-content-center">
               {post.title}
             </div>
