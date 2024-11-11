@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import appwriteService from "../appwrite/config";
-import Container from "../components/cont/Container.js";
+import Container from "../components/cont/Container";
 import PostCard from "../components/PostCard";
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
