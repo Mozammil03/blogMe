@@ -29,7 +29,7 @@ function Home() {
 
   if (posts.length === 0) {
     return (
-      <div className="w-full ">
+      <div className="w-full  ">
         <Container>
           <div className="w-full rounded-xl border-2 border-orange-100 min-h-[80vh] shadow-2xl bg-gradient-to-b from-orange-200 to-orange-200 flex flex-col text-orange-950 items-center justify-start py-12">
             <h1 className="text-5xl p-4 pt-0 md:text-5xl font-bold text-orange-600 text-center mb-4 ">
