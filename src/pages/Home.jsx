@@ -39,7 +39,7 @@ function Home() {
               Your space to create, share, and discover amazing stories
             </p>
 
-            <div className="grid grid-cols-1 w-[70%]  md:grid-cols-2 lg:grid-cols-2 gap-6  max-w-6xl mb-12">
+            <div className="grid grid-cols-1 w-[50%]  md:grid-cols-2 lg:grid-cols-1 gap-6  max-w-6xl mb-12">
               {features.map((feature, index) => (
                 <Link
                   to={feature.link}
